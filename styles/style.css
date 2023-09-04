@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #081b29;
+    /* background-color: #081b29; */
     color: white;
 }
 .header{
@@ -46,6 +46,10 @@ body{
 .home{
     height: 100vh;
     display: flex;
+    background: url('/img/bit2.webp') no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    margin-bottom: 150px;
     padding: 10%;
 }
 .home .static-txt {
@@ -57,7 +61,6 @@ body{
     line-height: 90px;
     height: 90px;
     overflow: hidden;
-    
 }
 .dynamic-txt li{
     list-style: none;
@@ -99,3 +102,69 @@ body{
         left: 0;
     }
 }
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    /* background: yellowgreen;  */
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    gap: 20px;
+}
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:hover{
+    transition: 1s;
+    /* color: #00abf0; */
+    color: transparent;
+}
+.home-logo-coin {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    
+}
+.home-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23rem;
+    gap: 10px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    
+}
+.home-logo img{
+    height: 40px;
+    width: 40px;
+}
+.footer-container{
+    width: 100%;
+    background-color: #081b29;
+
+}
+.footer-title{
+    color: red;
+}
+
