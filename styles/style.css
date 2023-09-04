@@ -8,6 +8,7 @@
 }
 body{
     background-color: #081b29;
+    color: white;
 }
 .header{
     position: absolute;
@@ -15,7 +16,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    /* background-color: yellowgreen; */
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,4 +42,60 @@ body{
     transition: all 0.5s ease;
     padding: 10px;
     border-radius: 5px;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    padding: 10%;
+}
+.home .static-txt {
+    font-size: 50px;
+    font-weight: 400;
+}
+.home .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+    
+}
+.dynamic-txt li{
+    list-style: none;
+    color: green;
+    font-size: 60px;
+    font-weight: 50px;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+
+}
+@keyframes slide {
+    100% {
+       top: -360px; 
+    }
+}
+
+.dynamic-txt li {
+    position: relative;
+}
+.dynamic-txt li ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    border-left: 2px solid green;
+    animation: typing 3s steps(16) infinite;
+
+}
+
+@keyframes typing{
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
 }
